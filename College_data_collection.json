@@ -1,0 +1,799 @@
+{"intents": [
+    {"tag": "greeting",
+     "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+     "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
+     "context": [""]
+    },
+    {"tag": "goodbye",
+     "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+     "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+     "context": [""]
+    },
+    {"tag": "thanks",
+     "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+     "responses": ["Happy to help!", "Any time!", "My pleasure"],
+     "context": [""]
+    },
+    {"tag": "noanswer",
+     "patterns": [],
+     "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+     "context": [""]
+    },
+    {"tag": "options",
+     "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
+     "responses": ["I can provide you with information and insights about the various activities and events taking place at Government College of Engineering Kalahandi."],
+     "context": [""]
+    },
+    {
+        "tag": "GCEK",
+        "patterns": [
+            "History of GCEK",
+            "when was GCEK founded?",
+            "Tell me about GCEK",
+            "about GCEK?",
+            "Give me information about GCEK?",
+            "founded by whom",
+            "founder of GCEK",
+            "founded of GCEK",
+            "Ranking of GCEK",
+            "Information on GCEK",
+            "rank of gcek",
+            "rank of this college",
+            "significance of college",
+            "significance of GCEK",
+            "ranking of GCEK"
+        ],
+        "responses": [
+            "Government College of Engineering, Kalahandi established in the year 2009 by an act of Govt. of Odisha and is functioning as a constituent college of BPUT, Odisha. The institute is located at the district headquarter of Kalahandi, i.e. Bhawanipatna. The exact location is besides the NH 201(Bargarh-Boriguma), about 5 Km away from Bhawanipatna on the way to Junagarh."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "name",
+        "patterns": [
+            "what should I call you",
+            "whats your name?",
+            "what are you",
+            "name",
+            "who am i taking to ",
+            "what are you",
+            "what are you called",
+            "what is your name",
+            "who are you",
+            "who is this",
+            "your name",
+            "do you have a name",
+            "what am i chatting to "
+        ],
+        "responses": [
+            "You can call me GCEK CONCLAVE BOT.",
+            "I'm GCEK CONCLAVE"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "hours",
+        "patterns": [
+            "timing of college",
+            "what is college timing",
+            "working days",
+            "when are you guys open",
+            "what are your hours",
+            "hours of operation",
+            "when is college open",
+            "college timing",
+            "what about college timing",
+            "is colege open on saturday",
+            "tell something about college timing",
+            "what is the college hours",
+            "what should i come to college",
+            "when should i attend college",
+            "what is my college time",
+            "college time",
+            "timing college"
+        ],
+        "responses": [
+            "College is open 9am-5pm Monday-Saturday!\n Second Saturday is holiday ;)"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "COLLEGE PRINCIPAL",
+        "patterns": [
+            "who is the principal of college?",
+            "who is the college principal",
+            "what is college principal name",
+            "Who is the head of the college?"
+        ],
+        "responses": [
+            "Prof.(Dr.) Dulu Patnaik is principal of Government College of Engineering Kalahandi.It is with great pride and privilege that I welcome you to Government College of Engineering, Bhawanipatna, Kalahandi and I hope you enjoy visiting our wonderful campus. Our institution is a learning community that seeks success for each student as we strive to deepen our core values of: discipline, life-long learning, respect and responsibility.For more information visit https://gcekbpatna.ac.in/theinstitute/principals_message to know more."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "CSE HOD",
+        "patterns": [
+            "who is the HOD of CSE department?",
+            "who is the Head of the department in CSE department",
+            "what is CSE HOD name",
+            "Who is the head of the CSE department?",
+            "who is the HOD of CSE",
+            "who is the head of the department of computer sciene?",
+            "who is the head of the department of computer sciene and engineering?",
+            "who is the head of the department of computer science and engineering of Government College of Engineering Kalahandi"
+        ],
+        "responses": [
+            "Dr. Basanta Kumar Swain is head of CSE department.Department of Computer Science & Engineering is started in the year of 2009 to cater the needs of the Western Odisha region. The department offers students an undergraduate program which is affiliated to Biju Patnaik University of Technology (BPUT), Rourkela.For more information visit https://gcekbpatna.ac.in/departments/computer_science_engineering to know more."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "Electrical Engineering HOD",
+        "patterns": [
+            "who is the HOD of Electrical Engineering department?",
+            "who is the Head of the department in Electrical Engineering department",
+            "what is Electrical Engineering HOD name",
+            "Who is the head of the Electrical Engineering department?",
+            "who is the HOD of Electrical Engineering",
+            "who is the head of the department of Electrical Engineering?",
+            "who is the head of the department of Electrical Engineering of Government College of Engineering Kalahandi"
+        ],
+        "responses": [
+            "Dr. ASINI KUMAR BALIARSINGH is head of Electrical Engineering department.The Department of Electrical Engineering started in the year 1997.The 4-year B.Tech course study includes fundamentals of Electrical Engineering embedded with Electrical Machines, Power System, Power Electronics, Control, Electronics, Communication, Signal processing and Artificial Intelligence.For more information visit https://gcekbpatna.ac.in/departments/electrical_engineering to know more."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "Mechanical Engineering HOD",
+        "patterns": [
+            "who is the HOD of Mechanical Engineering department?",
+            "who is the Head of the department in Mechanical Engineering department",
+            "what is Mechanical Engineering HOD name",
+            "Who is the head of the Mechanical Engineering department?",
+            "who is the HOD of Mechanical Engineering",
+            "who is the head of the department of Mechanical Engineering?",
+            "who is the head of the department of Mechanical Engineering of Government College of Engineering Kalahandi"
+            
+        ],
+        "responses": [
+            "Prof.Laxmi Narayan Rout is head of Mechanical Engineering department.The department of Mechanical Engineering at GCEK, Bhawanipatna offers a B.Tech programme and an M.Tech programme in the specialization of Thermal Engineering. This is the biggest department in the College; with a student strength of about 558.For more information visit https://gcekbpatna.ac.in/departments/mechanical_engineering to know more."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "Civil Engineering HOD",
+        "patterns": [
+            "who is the HOD of Civil Engineering department?",
+            "who is the Head of the department in Civil Engineering department",
+            "what is Civil Engineering HOD name",
+            "Who is the head of the Civil Engineering department?",
+            "who is the HOD of Civil Engineering",
+            "who is the head of the department of Civil Engineering?",
+            "who is the head of the department of Civil Engineering of Government College of Engineering Kalahandi"
+        ],
+        "responses": [
+            "Dr.Gopal Charan Behera is head of Civil Engineering department.The Civil Engineering department of the institute is enriched with well experience faculties. Different laboratory facilities are being set up. The department will have, Fluid Machanics and Machine Lab , Surveying Lab, Geotechnical Lab, Environmental Engineering Lab , Stuctural Engineering Lab and Concrete & Transportation Engg. Lab.For more information visit https://gcekbpatna.ac.in/departments/civil_engineering to know more."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "Basic Science HOD",
+        "patterns": [
+            "who is the HOD of Basic Science department?",
+            "who is the Head of the department in Basic Science department",
+            "what is Basic Science HOD name",
+            "Who is the head of the Basic Science department?",
+            "who is the HOD of Basic Science",
+            "who is the head of the department of Basic Science?",
+            "who is the head of the department of Basic Science of Government College of Engineering Kalahandi"
+        ],
+        "responses": [
+            "Dr. Susanta Kumar Mohanta is head of Basic Science department.This department comprises of the following departments:Department of Mathematics, Department of Physics, Department of Chemistry.For more information visit https://gcekbpatna.ac.in/departments/basic_science to know more."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "Humanities HOD",
+        "patterns": [
+            "who is the HOD of Humanities department?",
+            "who is the Head of the department in Humanities department",
+            "what is Humanities HOD name",
+            "Who is the head of the Humanities department?",
+            "who is the HOD of Humanities",
+            "who is the head of the department of Humanities?",
+            "who is the head of the department of Humanities of Government College of Engineering Kalahandi"
+        ],
+        "responses": [
+            "Dr. Lakshmi Prasad Panda is head of Humanities department.This department has three different subareas in English, Economics and Management to cater to the relevant subjects in all the years of B.Tech Programme. The department has a welequipped Communication laboratory where the students perform their communication skills to enhance their employability potential.For more information visit https://gcekbpatna.ac.in/departments/humanities to know more."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "number",
+        "patterns": [
+            "contact info",
+            "more info",
+            "how to contact college",
+            "college telephone number",
+            "what is your contact no",
+            "college number",
+            "Contact number?",
+            "college phone no?",
+            "how can i contact you",
+            "phone number",
+            "how to call you?",
+            "phone no.",
+            "call"
+        ],
+        "responses": [
+            "You can contact at 06670-299997, 06670 - 226506/ 510"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "contact",
+        "patterns": [
+            "GCEK address",
+            "principal office contact number",
+            "college gate number",
+            "college security guard number",
+            "what is mail of principal sir",
+            "what is the address of GCEK college",
+            "address of gcek college",
+            "contact information of GCEK college",
+            "how to contact GCEK about hostel",
+            "hostel contact number",
+            "what is the APJHR contact number",
+            "APJHR contact number",
+            "contact number of apjhr",
+            "what is the VHR contact number",
+            "contact number of vhr",
+            "VHR contact number",
+            "what is the MTHR contact number",
+            "contact number of mthr",
+            "MTHR contact number"
+        ],
+        "responses": [
+            "Government College of Engineering Kalahandi, At P.O: Bandopala,Bhawanipatna,Dist: Kalahandi\n                Pin: 766002, Odisha.\n                Principal Office: 9692383708\n                Main Gate: 9692383712\n                MTHR: 9692383709\n                VHR: 9692383710\n                APJHR: 9692383711\n                Office: 06670-299997,06670-226506/ 510,\n                Email: principal@gcekbpatna.ac.in/ principalgcek@gmail.com\n                info@gcekbpatna.ac.in"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"CSE DEPARTMENT",
+        "patterns": [
+            "CSE",
+            "Where is CSE department in GCEK?",
+            "Where is computer science department in GCEK?",
+            "which are the fecuilty rooms of computer science baranch in GCEk",
+            "Where is the room of CSE department HOD?",
+            "Where is the rooms of Computer science department HOD?",
+            "Where is the HOD room in CSE department ?",
+            "Where is Computer Science and Engineering department in GCEK?",
+            "In which floor CSE department placed",
+            "Which rooms belongs to CSE department",
+            "Which rooms belongs to Computer Science and Engineering department"
+        ],
+        "responses": [
+            " In Government College of Engineering Kalahandi the Computer science and engineering department is placed in ground floor of main building, Which covers the branch staff rooms from room number 1 and 2 and the Head of the Department office is in room number 3."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"EE DEPARTMENT",
+        "patterns": [
+            "EE",
+            "Where is EE department in GCEK?",
+            "Where is electricl department in GCEK?",
+            "which are the fecuilty rooms of electrical engineering baranch in GCEk",
+            "Where is the room of EE department HOD?",
+            "Where is the rooms of electical engineering department HOD?",
+            "Where is the HOD room in EE department ?",
+            "Where is electrical Engineering department in GCEK?",
+            "In which floor EE department placed",
+            "Which rooms belongs to EE department",
+            "Which rooms belongs to electrical Engineering department"
+        ],
+        "responses": [
+            " In Government College of Engineering Kalahandi the Electrical Engineering department is placed in first floor of main building, Which covers the branch staff rooms from room number 1 and 3 and the Head of the Department office is in room number 3."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"ME DEPARTMENT",
+        "patterns": [
+            "ME",
+            "Where is ME department in GCEK?",
+            "Where is mechanical department in GCEK?",
+            "which are the fecuilty rooms of mechanical baranch in GCEk",
+            "Where is the room of ME department HOD?",
+            "Where is the rooms of mechanical department HOD?",
+            "Where is the HOD room in ME department ?",
+            "Where is mechanicl department in GCEK?",
+            "In which floor ME department placed",
+            "Which rooms belongs to ME department",
+            "Which rooms belongs to mechanical Engineering department"
+        ],
+        "responses": [
+            " In Government College of Engineering Kalahandi the Mechanical Engineering department is placed in first floor of main building, Which covers the branch staff rooms from room number 119 and 121 and the Head of the Department office is in room number 121."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"CIVIL DEPARTMENT",
+        "patterns": [
+            "CIVIL",
+            "Where is CE department in GCEK?",
+            "Where is CIVIL department in GCEK?",
+            "which are the fecuilty rooms of computer civil baranch in GCEk",
+            "Where is the room of Civil department HOD?",
+            "Where is the rooms of CE department HOD?",
+            "Where is the HOD room in Civil department ?",
+            "Where is civil Engineering department in GCEK?",
+            "In which floor CE department placed",
+            "Which rooms belongs to CE department",
+            "Which rooms belongs to Civil Engineering department"
+        ],
+        "responses": [
+            " In Government College of Engineering Kalahandi the Civil Engineering department is placed in Third floor of main building, Which covers the branch staff rooms from room number 301 and 303 and the Head of the Department office is in room number 302."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag": "clubs",
+        "patterns": [
+            "what are differnt clubs in GCEK",
+            "whar are extra-circular acitivities in GCEK",
+            "clubs in GCEK",
+            "creative arts",
+            "literature club",
+            "singing club",
+            "dance club",
+            "arts club",
+            "How many clubs does college have?",
+            "clubs",
+            "english literature club"
+        ],
+        "responses":[
+            "GCEK offers a range of extracurricular activities through its various clubs and societies.GCEK provides various opportunities for students to engage in extracurricular activities through its clubs and societies.\n Some of the popular clubs are the 1)Literary Club \n 2)Music Club \n 3)Dance Club \n 4)Fine Arts Club \n 5)Nature Club \n 6)Entrepreneurship Club etc. \n joining these clubs can help students develop their skills and interests outside the classroom."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"course",
+        "patterns":[
+            "list of courses",
+            "whar are the courses offered in your college",
+            "courses?",
+            "courses offered",
+            "courses offered in GCEK",
+            "courses you offer",
+            "branches?",
+            "list of courses offered",
+            "list of courses offered in GCEK",
+            "courses available at GCEK?",
+            "branches available at GCEK?",
+            "different courses",
+            "branches available?",
+            "different departments available",
+            "different departments",
+            "certification courses offered",
+            "can you tell me the courses available in GCEK?",
+            "can you tell me the branches available in GCEK?",
+            "different branches",
+            "certification course",
+            "training program",
+            "training",
+            "special training"
+        ],
+        "responses":[
+            "For Undergraduate the courses are CIVIL ENGINEERING,COMPUTER SCIENCE & ENGINEERING,ELECTRICAL ENGINEERING,MECHANICAL ENGINEERING and Postgraduate courses are ELECTRICAL ENGINEERING and MECHANICAL ENGINEERING. For more information visit  https://gcekbpatna.ac.in/academics/course to know more"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"admissions",
+        "patterns":[
+            "admitted",
+            "admit",
+            "how to get seat in college",
+            "seat",
+            "seat in college",
+            "How can i get into GCEK?",
+            "got seat in college?",
+            "what is the admission process at GCEK?",
+            "what is the process of admission",
+            "what is the admission process",
+            "How to take admission in your college",
+            "Admission process",
+            "admit process",
+            "what is the process for admission",
+            "admission",
+            "admission process",
+            "process to admit",
+            "admit in college?"
+        ],
+        "responses":[
+            "The admission procedure for Government College of Engineering Kalahandi, Bhawanipatna is as per Biju Patnaik University of Technology, Odisha (BPUT) norms and is strictly governed by Odisha Joint Entrance Examination (OJEE).\n For details view: visit http://www.bput.ac.in/, Odisha (Make a tab, give BPUT Logo as on home page and give link to BPUT Website) \n and visit  https://odishajee.com/ ,Odisha (Make a small Tab and give link to JEE website)"
+        ],
+        "context_set": ""
+
+    },
+    {
+        "tag":"fees",
+        "patterns":[
+            "information about fee",
+            "information on fee",
+            "what is fee",
+            "what is the fees",
+            "how much is the fees",
+            "fees for first year",
+            "tell me the fee",
+            "college fee",
+            "fee per semester",
+            "what is the fee of each semester",
+            "what is the fees of each year",
+            "fees",
+            "about the fees",
+            "tell me something about the fees"
+        ],
+        "responses":[
+            "For fee details visit https://gcekbpatna.ac.in/academics/coursefee"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"Board of Governs",
+        "patterns":[
+            "who are the members of Board of Governs at GCEK?",
+            "Governing council members",
+            "Does the college have a governing council",
+            "GCEK society members?",
+            "Board of Governs members",
+            "who are the members of Governing council at GCEK?",
+            "members of governing council",
+            "who all are members of GCEK Society?"
+        ],
+        "responses":[
+            "For details about all the members of Board of Governs: https://gcekbpatna.ac.in/theinstitute/bog "
+        ],
+        "context_set":""
+
+    },
+    {
+        "tag": "hostel",
+        "patterns":[
+            "hostel facilities",
+            "hostal fees",
+            "Does college provide hostel",
+            "Is there any hostel",
+            "Where is hostel",
+            "do you have hostel",
+            "do you guys have hostel",
+            "hostel",
+            "hostel facility",
+            "hostel service",
+            "hostel location",
+            "hostel address",
+            "hostel capacity",
+            "what is the hostel fee",
+            "how big is the hostel",
+            "distance between colege and hostel",
+            "distance between hostel and college",
+            "how to get in hostel",
+            "what is the hostel address",
+            "how far is hostel from college ",
+            "hostel college distance",
+            "where is the hostel"
+        ],
+        "responses":[
+            "Government College of Engineering Kalahandi, Bhawanipatna is a well-known college in the Western region of Odisha. So many students from different regions of the state & country are perceiving their studies in this college. To provide accommodation facilities for such students, Government College of Engineering Kalahandi, Bhawanipatna Provides hostel facilities. College has 3 hostels within its campus which includes 2 for boys and 1 for girls. The Hostel Facilities are very good and the environment in the hostel is also suitable to flourish.For more information visit: https://gcekbpatna.ac.in/facilities/hostel"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"event",
+        "patterns":[
+            "events organised",
+            "list of events",
+            "list of events conducted in college",
+            "what events are conducted in college",
+            "Are there any event held at college",
+            "Events?",
+            "functions",
+            "what are the events",
+            "what about events",
+            "fests",
+            "Fests in college",
+            "fest",
+            "technical fest",
+            "cultural fest",
+            "Does GCEK have fests?",
+            "list of events organised in college"
+
+        ],
+        "responses":[ 
+            "GCEK organizes a variety of events throughout the year, including technical fests, cultural fests, sports events, workshops, seminars, and guest lectures. Some of the major events are the annual technical fest 'TechFest' and the cultural fest 'Zephyr'. We also celebrate national and international events such as Independence Day, Republic Day, International Women's Day, and World Environment Day. Stay tuned for updates on upcoming events!"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"canteen",
+        "patterns":[
+            "food facilities",
+            "canteen facilities",
+            "canteen facility",
+            "is there any canteen",
+            "Is there a cafetaria in college",
+            "Does college have canteen",
+            "where is canteen",
+            "Where is cafetaria",
+            "canteen",
+            "cafetaria",
+            "menu in canteen",
+            "menu",
+            "food",
+            "I want food where to go"
+        ],
+        "responses":[
+            "If you are looking for food in GCEK, you can visit the college canteen which offers a variety of food options like 1)Fast food \n 2)South Indian \n 3)North Indian \n 4)Chinese \n 5)bakery items and beverages \n It is located near the main entrance of the college."
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"placement",
+        "patterns":[
+            "placements",
+            "tell me about placements in GCEK",
+            "placement",
+            "about placements",
+            "training and placement cell",
+            "about T&P",
+            "tell me about training and placements",
+            "placement commity",
+            "tell me about GCEK placement",
+            "What are the companies that will be visiting for placements this year?",
+            "What is the selection process for placements?",
+            "What is the eligibility criteria for placements?",
+            "How many students have been placed till now?",
+            "What are the average and highest salary packages offered?",
+            "Can you provide some tips on how to prepare for placements?",
+            "What is the role of the placement cell in the placement process?",
+            "How can I improve my chances of getting selected?",
+            "What is the difference between on-campus and off-campus placements?",
+            "Can you provide some examples of interview questions asked during placements?"
+        ],
+        "responses":[
+            "There is a training and placement cell in the institute which takes care to contact different farms, industries and professionals to bring the students in line of the present requirement for industries and society. The cell plans to conduct different training programme to train the students for campus drive.The cell also takes care for career guidance and development of the students.For more information visit https://gcekbpatna.ac.in/tandp/training_placement "
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"Scolarships",
+        "patterns":[
+            "What is Scolarship",
+            "Tell Something About Scolarship",
+            "Want to know about scolarship",
+            "scolarship",
+            "criteria for Scolarship",
+            "What documents are needed to apply Scolarship",
+            "How to know i am applicable for this scolarship or not",
+            "How to check criteria for st",
+            "How to check criteria for sc",
+            "How to check criteria for obc",
+            "How to check criteria for general"
+
+        ],
+        "responses": [
+            "An amount of money given by a school, college, university, or other organization to pay for the studies of a person with great ability but little money. \n For more information visit https://gcekbpatna.ac.in/academics/scholarship"
+            
+        ],
+        "context_set":""           
+    },
+    {
+        "tag":"Conference",
+        "patterns":[
+            "What is Conference",
+            "When Conference will happen"
+        ],
+        "responses":[
+            "For more information visit https://gcekbpatna.ac.in/academics/conference"
+        ],
+        "context_set":""
+    },
+    {
+        "tag":"Workshop/Seminar",
+        "patterns":[
+            "What is Seminar",
+            "What is workshop",
+            "When workshop will happen",
+            "when seminar will happen"
+        ],
+        "responses":[
+            "For more information visit https://gcekbpatna.ac.in/academics/workshop"
+        ],
+        "context_set":""
+    },
+    {
+        "tag":"computer center",
+        "patterns":[
+            "where computer center in GCEK",
+            "computer",
+            "computer center",
+            "GCEK computer center",
+            "What services are offered at the computer center?",
+            "How can I book a computer in advance?",
+            "Can I get technical support at the computer center?",
+            "Is printing available at the computer center?",
+            "Can I rent equipment from the computer center?",
+            "What are the hours of operation for the computer center?",
+            "How do I access the internet at the computer center?",
+            "What are the fees associated with using the computer center?",
+            "What software is available at the computer center?",
+            "How do I connect to the wireless network at the computer center?"
+        ],
+        "responses":[
+            "A modern computer center occupying an area of 168 sq. mtr. serves as a central facility for all the departments. All the terminals in the center and computer Labs are connected through high speed networking provided by NMICT. All the terminals are provided with Internet connectivity by NMICT with a capacity of 20 Mbps. Apart from all softwares, the center is also equipped with visual aids like LCD projector, multi function printers, Scanners, etc..For more information visit https://gcekbpatna.ac.in/facilities/computer-center"
+        ],
+        "context_set":""
+    },
+    {
+        "tag":"Guest house",
+        "patterns":[
+            "where guest house in GCEK",
+            "GCEK guest house",
+            "Guest house of GCEK",
+            "parents guest house",
+            "What are the amenities available at the guest house of our college?",
+            "Can you tell me more about the guest house of our college?",
+            "How can I book a room at the guest house of our college?",
+            "Is the guest house of our college open to the public or only to students and staff?",
+            "Are there any special discounts available for students who want to stay at the guest house of our college?",
+            "What is the check-in and check-out time at the guest house of our college?",
+            "How many rooms are available at the guest house of our college?",
+            "Is there a kitchenette or refrigerator available in the rooms at the guest house of our college?",
+            "Can I request for additional services or amenities during my stay at the guest house of our college?",
+            "Is there a shuttle service available from the guest house of our college to other parts of the campus?"
+        ],
+        "responses":[
+            "GCEK, Bhawanipatna has a guest house for its employees, visiting officials, Alumni and Parents of the students. Visitors, such as research collaborators, visiting Professors and seminar/FDP/conference participants are also eligible for a short-term stay at the guest house.\n For more information visit https://gcekbpatna.ac.in/facilities/guest_house"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"TEQIP",
+        "patterns":[
+            "what is TEQIP",
+            "TEQIP",
+            "about TEQIP",
+            "tell me about TEQIP of GCEK",
+            "GCEK TEQIP",
+            "THE TECHNICAL EDUCATION QUALITY IMPROVEMENT PROGRAMME OF GOVERNMENT OF INDIA"
+        ],
+        "responses":[
+            "The TEQIP is the Technical Education Quality Improvement Programme of Government of India.For more infomation visit https://teqip.gcekbpatna.ac.in/"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"ANTI RAGING COMMITTEE",
+        "patterns":[
+            "ANTI RAGING COMMITTEE",
+            "about ANTI RAGING COMMITTEE",
+            "where is the ANTI RAGING COMMITTEE",
+            "What is the role of the Anti-Ragging Committee in our college?",
+            "How can I report an incident of ragging to the Anti-Ragging Committee?",
+            "Who can I contact if I feel like I am being bullied or harassed by my seniors in college?",
+            "What are the consequences for students who engage in ragging activities in our college?",
+            "How does the Anti-Ragging Committee ensure the safety and well-being of students in our college?",
+            "Are there any workshops or training sessions organized by the Anti-Ragging Committee to create awareness about ragging and its impact?",
+            "What is the procedure for filing a complaint with the Anti-Ragging Committee?",
+            "Can the identity of the complainant be kept confidential by the Anti-Ragging Committee?",
+            "How does the Anti-Ragging Committee collaborate with other committees in the college to ensure a safe and healthy environment for all students?",
+            "Is there a helpline or support system available for students who have been victims of ragging in our college?"
+        ],
+        "responses":[
+            "Please visit and contact these numbers https://gcekbpatna.ac.in/theinstitute/other_committee/anti_raging_committee"
+        ],
+        "context_set": ""
+    },
+    {
+        "tag":"WOMEN CELL",
+        "patterns":[
+            "where WOMEN CELL in GCEK",
+            "WOMEN CELL of GCEK",
+            "GCEK women cell",
+            "What is the role of the Women Cell in our college?",
+            "How can the Women Cell of our college help female students with their problems and concerns?",
+            "Are there any workshops or training sessions organized by the Women Cell of our college to create awareness about women's rights and safety?",
+            "Can male students also approach the Women Cell of our college for any assistance or guidance?",
+            "Is there a helpline or support system available for female students who have been victims of harassment or assault?",
+            "How does the Women Cell collaborate with other committees in the college to ensure a safe and healthy environment for all students?",
+            "What steps does the Women Cell take to prevent incidents of harassment or discrimination against female students in our college?",
+            "Are there any counseling services provided by the Women Cell to help",
+            "female students cope with personal or academic issues?",
+            "the Women Cell in our college?",
+            "How does the Women Cell of our college ensure that female students are treated fairly and given equal opportunities in all aspects of college life?"
+        ],
+        "responses":[
+            "The information about WOMEN CELL visit https://gcekbpatna.ac.in/theinstitute/other_committee/women_cell to know more."
+        ],
+        "context_set":""
+    },
+    {
+        "tag":"GCEK ALMA CONNECT",
+        "patterns":[
+            "(ALUMNI ASSOCIATION)",
+            "ALUMNI ASSOCIATION",
+            "gcek alma connect",
+            "GCEK ALUMNI ASSOCIATION"
+        ],
+        "responses":[
+            "For more infomation visit https://alumni.gcekbpatna.ac.in/"
+        ],
+        "context_set":""
+    },
+    {
+        "tag":"GCEK E-MAGAZINE",
+        "patterns":[
+            "GCEK E-MAGAZINE",
+            "E-MAGAZINE",
+            "E_MAGAZINE OF GCEK"
+        ],
+        "responses":[
+            "This website is dedicated specially for the alumni. It will provide an interface to search and find our esteemed alumni which is useful to undergrads and to students going to join GCEK. Employers also find this portal useful.For more infomation visit https://alumni.gcekbpatna.ac.in/"
+        ],
+        "context_set":""
+    },
+    {
+        "tag":"ONLINE PAYMENT",
+        "patterns":[
+            "ONLINE PAYMENT",
+            "online payment of GCEK",
+            "GCEK online payment",
+            "where to pay on GCEK website"
+        ],
+        "responses":[
+            "For more infomation visit https://gcekbpatna.ac.in/billpayment/"
+        ],
+        "context_set":""
+    },
+    {
+        "tag":"GRIEVANCE CELL",
+        "patterns":[
+            "GRIEVANCE CELL",
+            "grievance cell  of GCEK",
+            "GCEK Grievence Cell"
+        ],
+        "responses":[
+            "For more infomation visit https://gcekbpatna.ac.in/grievancecell"
+        ],
+        "context_set":""
+    },
+    {
+        "tag":"Important Links",
+        "patterns":[
+            "import links of GCEK",
+            "DTET ODISHA",
+            "Odisha Govt. Portal",
+            "NIT, Rourkela",
+            "IIT, Bhubaneswar",
+            "Odisha JEE"
+        ],
+        "responses":[
+            "The DTET ODISHA visit: https://dtetodisha.gov.in/en/ \n Odisha Govt. Portal visit: https://odisha.gov.in/ \n NIT, Rourkela visit: https://www.nitrkl.ac.in/ \n IIT, Bhubaneswar visit: https://www.iitbbs.ac.in/ \n Odisha JEE visit: https://odishajee.com/"
+        ],
+        "context_set":""
+    },
+    {
+        "tag":"Deloper",
+        "patterns": [
+            "Who developes you",
+            "Which guys develope you"
+        ],
+        "responses": [
+            "There are four valid guys from GCEK developes me whos names are Suri, Kiran, Pratik and Ritik"
+        ],
+        "context_set": ""
+    }
+]
+}
